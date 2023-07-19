@@ -1,6 +1,6 @@
 "use client";
 
-import axios from "axios";
+
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
@@ -8,6 +8,7 @@ import Button from "@/app/components/ui/button";
 import Currency from "@/app/components/ui/currency";
 import useCart from "@/hooks/use-cart";
 import { toast } from "react-hot-toast";
+import axios from "axios";
 
 const Summary = () => {
   const searchParams = useSearchParams();
