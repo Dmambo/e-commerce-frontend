@@ -6,7 +6,7 @@ import Currency  from "@/app/components/ui/currency";
 
 import { Product } from "@/types";
 import useCart from "@/hooks/use-cart";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 
 interface InfoProps {
   data: Product
