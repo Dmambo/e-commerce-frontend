@@ -15,6 +15,8 @@ const Summary = () => {
   const items = useCart((state) => state.items);
   const removeAll = useCart((state) => state.removeAll);
 
+  console.log(items)
+
   useEffect(() => {
     if (searchParams.get('success')) {
       toast.success('Payment completed.');
@@ -32,17 +34,6 @@ const Summary = () => {
 
   const router = useRouter();
 
-
-  const onCheckout = async () => {
-    // const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
-    //   productIds: items.map((item) => item.id),
-    //   quantities: items.map((item) => item.quantity)
-    // });
-
-    // window.location = response.data.url;
-
-    
-  }
 
   return ( 
     <div
