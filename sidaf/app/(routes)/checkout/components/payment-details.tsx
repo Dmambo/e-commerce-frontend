@@ -2,19 +2,17 @@ import { Separator } from "@/components/ui/separator";
 import { Copy } from "lucide-react";
 import { toast } from "react-hot-toast";
 
-
 const PaymentDetails = () => {
-
-    const accNum = "0830473895"
-    const bank = "Guaranty Trust Bank"
-    const copyAccount = () => {
-        navigator.clipboard.writeText(accNum);
-        toast.success("Copied");
-      }
-    const copyBank = () => {
-        navigator.clipboard.writeText(bank);
-        toast.success("Copied");
-      }
+  const accNum = "0830473895";
+  const bank = "Guaranty Trust Bank";
+  const copyAccount = () => {
+    navigator.clipboard.writeText(accNum);
+    toast.success("Copied");
+  };
+  const copyBank = () => {
+    navigator.clipboard.writeText(bank);
+    toast.success("Copied");
+  };
 
   return (
     <>
@@ -36,27 +34,19 @@ const PaymentDetails = () => {
         <div className="flex justify-between border border-y-gray-400 p-3">
           <h3>Account-Number</h3>
           <p className="flex gap-2">
-          0830473895
-            <span
-              onClick={copyAccount}
-              className="cursor-pointer"
-            >
+            0830473895
+            <span onClick={copyAccount} className="cursor-pointer">
               <Copy />
             </span>
-          
           </p>
         </div>
         <div className="flex justify-between border border-y-gray-400 p-3">
           <h3>Bank-Name</h3>
           <p className="flex gap-2">
-          Guaranty Trust Bank
-            <span
-              onClick={copyBank}
-              className="cursor-pointer"
-            >
+            Guaranty Trust Bank
+            <span onClick={copyBank} className="cursor-pointer">
               <Copy />
             </span>
-          
           </p>
         </div>
       </div>
