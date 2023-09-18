@@ -53,7 +53,7 @@ const CartItem: React.FC<CartItemProps> = ({ data }) => {
             </p>
             <p className="text-gray-500">{data.description}</p>
           </div>
-          <Currency value={Number(data.price) * (data.quantity)} />{" "}
+          <Currency value={Number(data.price) * (data.quantity)} />{" "} 
           {/* Update the price based on the quantity */}
         </div>
         <div className="flex items-center justify-center gap-2">
